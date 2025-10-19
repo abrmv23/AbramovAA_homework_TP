@@ -20,6 +20,20 @@ def main():
     a = int(input())
     print("b = ",end='')
     b = int(input())
+    print("Математическая операция('+','-','*','/'): ",end='')
+
+    operation = str(input())
+
+    if operation == '+':
+        print(f'Результат операции = {plus(a,b)}')
+    elif operation == '-':
+        print(f'Результат операции = {minus(a,b)}')
+    elif operation == '*':
+        print(f'Результат операции = {times(a,b)}')
+    elif operation == '/':
+        print(f'Результат операции = {divided(a,b)}')
+    else:
+        print("Недействительная операция")
     return
 
 main()
