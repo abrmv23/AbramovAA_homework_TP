@@ -13,7 +13,7 @@ def divided(a,b):
         return "Операция недействительна"
     else:
         return a/b
-    
+
 def main():
     print("Введите пару целых чисел:")
     print("a = ",end='')
@@ -25,13 +25,13 @@ def main():
     operation = str(input())
 
     if operation == '+':
-        print(f'Результат операции = {plus(a,b)}')
+        print(f'Результат противоположной операции = {minus(a,b)}')
     elif operation == '-':
-        print(f'Результат операции = {minus(a,b)}')
+        print(f'Результат противоположной операции = {plus(a,b)}')
     elif operation == '*':
-        print(f'Результат операции = {times(a,b)}')
+        print(f'Результат противоположной операции = {divided(a,b)}')
     elif operation == '/':
-        print(f'Результат операции = {divided(a,b)}')
+        print(f'Результат противоположной операции = {times(a,b)}')
     else:
         print("Недействительная операция")
     return
